@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ContainsDuplicates {
-    // LeetCode 217. | Level: Easy
+    // LeetCode 217 | Level: Easy
     // https://leetcode.com/problems/contains-duplicate/
 
     // Given an integer array nums, return true if any value appears at least twice

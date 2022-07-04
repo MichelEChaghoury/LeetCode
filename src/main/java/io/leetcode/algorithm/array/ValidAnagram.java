@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ValidAnagram {
-    // LeetCode 242. | Level: Easy
+    // LeetCode 242 | Level: Easy
     // https://leetcode.com/problems/valid-anagram/
 
     // Given two strings s and t, return true if t is an anagram of s, and false

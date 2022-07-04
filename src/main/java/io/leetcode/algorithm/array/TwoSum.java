@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
-    // LeetCode 1. | Level: Easy
+    // LeetCode 1 | Level: Easy
     // https://leetcode.com/problems/two-sum/
 
     // Given an array of integers nums and an integer target, return indices of the
