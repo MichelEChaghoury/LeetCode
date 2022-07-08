@@ -1,8 +1,8 @@
 package io.leetcode.algorithm.array;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -37,7 +37,7 @@ public class GroupAnagrams {
 
     public List<List<String>> groupAnagrams(String[] strs) {
 
-        List<List<String>> results = new ArrayList<>();
+        List<List<String>> results = new LinkedList<>();
         Map<String, List<String>> map = new HashMap<>();
 
         if (strs.length == 1) {
@@ -55,7 +55,7 @@ public class GroupAnagrams {
             String key = Arrays.toString(chars);
 
             if (!map.containsKey(key)) {
-                map.put(key, new ArrayList<>());
+                map.put(key, new LinkedList<>());
             }
 
             map.get(key).add(str);

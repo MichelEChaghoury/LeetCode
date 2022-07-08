@@ -1,6 +1,6 @@
 package io.leetcode.algorithm.array;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class EncodeAndDecodeStrings {
@@ -39,7 +39,7 @@ public class EncodeAndDecodeStrings {
     }
 
     public List<String> decode(String str) {
-        List<String> strs = new ArrayList<>();
+        List<String> strs = new LinkedList<>();
 
         int i = 0;
         while (i < str.length()) {
