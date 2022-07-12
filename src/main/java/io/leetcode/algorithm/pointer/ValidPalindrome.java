@@ -36,9 +36,7 @@ public class ValidPalindrome {
     // s consists only of printable ASCII characters.
 
     public boolean isPalindrome(String s) {
-        if (s.isBlank()) {
-            return true;
-        }
+        if (s.isBlank()) return true;
 
         char[] characters = s.toLowerCase().toCharArray();
         int left = 0;
@@ -46,17 +44,10 @@ public class ValidPalindrome {
 
         while (left < right) {
 
-            while (!isAlphanumeric(characters[left]) && left < right) {
-                left++;
-            }
+            while (!isAlphanumeric(characters[left]) && left < right) left++;
+            while (!isAlphanumeric(characters[right]) && right > left) right--;
 
-            while (!isAlphanumeric(characters[right]) && right > left) {
-                right--;
-            }
-
-            if (characters[left] != characters[right]) {
-                return false;
-            }
+            if (characters[left] != characters[right]) return false;
 
             left++;
             right--;

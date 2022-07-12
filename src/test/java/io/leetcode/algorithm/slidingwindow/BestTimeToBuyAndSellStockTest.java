@@ -1,9 +1,9 @@
-package io.leetcode.slidingwindow;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+package io.leetcode.algorithm.slidingwindow;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BestTimeToBuyAndSellStockTest {
 
@@ -15,9 +15,9 @@ public class BestTimeToBuyAndSellStockTest {
     }
 
     @Test
-    void maxProfit_shouldReturnZeroWhenWhenNoProfitbleTransationWasFound() {
+    void maxProfit_shouldReturnZeroWhenWhenNoProfitableTranslationWasFound() {
         // Given
-        int[] prices = new int[] { 8, 7, 6, 4, 3, 1, 1 };
+        int[] prices = new int[]{8, 7, 6, 4, 3, 1, 1};
 
         // When
         int actual = underTest.maxProfit(prices);
@@ -30,7 +30,7 @@ public class BestTimeToBuyAndSellStockTest {
     @Test
     void maxProfit_shouldReturnTheMaximumProfitableTransaction() {
         // Given
-        int[] prices = new int[] { 7, 1, 5, 3, 6, 4 };
+        int[] prices = new int[]{7, 1, 5, 3, 6, 4};
 
         // When
         int actual = underTest.maxProfit(prices);

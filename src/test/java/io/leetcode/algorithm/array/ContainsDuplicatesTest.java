@@ -1,10 +1,10 @@
 package io.leetcode.algorithm.array;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ContainsDuplicatesTest {
 
@@ -18,7 +18,7 @@ public class ContainsDuplicatesTest {
     @Test
     void containsDuplicate_shouldReturnFalseWhenNoDuplicateWasFound() {
         // Given
-        int[] nums = new int[] { 1, 2, 3, 4 };
+        int[] nums = new int[]{1, 2, 3, 4};
 
         // When
         boolean actual = underTest.containsDuplicate(nums);
@@ -30,7 +30,7 @@ public class ContainsDuplicatesTest {
     @Test
     void containsDuplicate_shouldReturnTrueWhenDuplicatesWasFound() {
         // Given
-        int[] nums = new int[] { 1, 2, 3, 1 };
+        int[] nums = new int[]{1, 2, 3, 1};
 
         // When
         boolean actual = underTest.containsDuplicate(nums);

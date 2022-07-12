@@ -1,12 +1,12 @@
 package io.leetcode.algorithm.pointer;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.LinkedList;
 import java.util.List;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ThreeSumTest {
 
@@ -20,7 +20,7 @@ public class ThreeSumTest {
     @Test
     void threeSum_shouldReturnEmptyListWhenNoPossibleTripletWasFound() {
         // Given
-        int[] nums = new int[] { 0, 1, 1 };
+        int[] nums = new int[]{0, 1, 1};
 
         // When
         List<List<Integer>> actual = underTest.threeSum(nums);
@@ -33,7 +33,7 @@ public class ThreeSumTest {
     @Test
     void threeSum_shouldReturnListOfAllPossibleTripletFound() {
         // Given
-        int[] nums = new int[] { -1, 0, 1, 2, -1, -4 };
+        int[] nums = new int[]{-1, 0, 1, 2, -1, -4};
 
         // When
         List<List<Integer>> actual = underTest.threeSum(nums);

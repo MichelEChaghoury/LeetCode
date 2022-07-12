@@ -29,9 +29,8 @@ public class LongestConsecutiveSequence {
 
     public int longestConsecutive(int[] nums) {
 
-        if (nums.length < 2) {
-            return nums.length;
-        }
+        if (nums.length < 2) return nums.length;
+
 
         int counter = 1;
         Set<Integer> set = new HashSet<>();
@@ -42,9 +41,7 @@ public class LongestConsecutiveSequence {
 
         for (int number : nums) {
 
-            if (set.contains(number - 1)) {
-                continue;
-            }
+            if (set.contains(number - 1)) continue;
 
             int currentCounter = 1;
             int num = number + 1;

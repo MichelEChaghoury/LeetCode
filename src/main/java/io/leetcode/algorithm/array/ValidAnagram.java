@@ -31,9 +31,7 @@ public class ValidAnagram {
     // your solution to such a case?
 
     public boolean isAnagram(String s, String t) {
-        if (s.length() != t.length()) {
-            return false;
-        }
+        if (s.length() != t.length()) return false;
 
         int n = s.length();
         char[] source = s.toCharArray();
@@ -54,9 +52,8 @@ public class ValidAnagram {
             char key = entry.getKey();
             int value = entry.getValue();
 
-            if (!targetMap.containsKey(key) || targetMap.get(key) != value) {
-                return false;
-            }
+            if (!targetMap.containsKey(key) || targetMap.get(key) != value) return false;
+
         }
 
         return true;

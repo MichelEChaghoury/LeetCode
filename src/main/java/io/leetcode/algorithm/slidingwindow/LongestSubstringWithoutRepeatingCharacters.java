@@ -1,4 +1,4 @@
-package io.leetcode.slidingwindow;
+package io.leetcode.algorithm.slidingwindow;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -34,9 +34,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
 
     public int lengthOfLongestSubstring(String s) {
 
-        if (s.length() <= 1) {
-            return s.length();
-        }
+        if (s.length() <= 1) return s.length();
 
         char[] chars = s.toCharArray();
         Set<Character> set = new LinkedHashSet<>();

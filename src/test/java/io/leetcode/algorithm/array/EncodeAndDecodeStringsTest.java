@@ -1,12 +1,12 @@
 package io.leetcode.algorithm.array;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertIterableEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 
 public class EncodeAndDecodeStringsTest {
 
@@ -18,7 +18,7 @@ public class EncodeAndDecodeStringsTest {
     }
 
     @Test
-    void encode_shouldConcateAllElementsOfArrayWithDelimiterBetweenEachString() {
+    void encode_shouldConcatenateAllElementsOfArrayWithDelimiterBetweenEachString() {
         // Given
         List<String> str = List.of("lint", "code", "love", "you");
 

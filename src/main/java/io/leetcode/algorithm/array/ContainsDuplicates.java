@@ -28,11 +28,9 @@ public class ContainsDuplicates {
     // -109 <= nums[i] <= 109
 
     public boolean containsDuplicate(int[] nums) {
+        if (nums.length <= 1) return false;
+        
         Set<Integer> set = new HashSet<>();
-
-        if (nums.length <= 1) {
-            return false;
-        }
 
         for (int number : nums) {
             if (set.contains(number)) {

@@ -47,8 +47,7 @@ public class GroupAnagrams {
             return results;
         }
 
-        for (int i = 0; i < strs.length; i++) {
-            String str = strs[i];
+        for (String str : strs) {
             char[] chars = str.toCharArray();
 
             Arrays.sort(chars);

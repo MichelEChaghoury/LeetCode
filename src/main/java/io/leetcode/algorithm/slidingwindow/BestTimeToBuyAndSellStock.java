@@ -1,4 +1,4 @@
-package io.leetcode.slidingwindow;
+package io.leetcode.algorithm.slidingwindow;
 
 public class BestTimeToBuyAndSellStock {
     // LeetCode 121 | Level: Easy

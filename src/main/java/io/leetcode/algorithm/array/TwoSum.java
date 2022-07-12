@@ -40,7 +40,6 @@ public class TwoSum {
 
     public int[] twoSum(int[] nums, int target) {
 
-        // store each value of nums with it's respective index
         Map<Integer, Integer> map = new HashMap<>();
         int[] result = new int[2];
 
@@ -53,10 +52,9 @@ public class TwoSum {
                 result[1] = i;
 
                 break;
-            } else {
-                map.put(currentNumber, i);
             }
 
+            map.put(currentNumber, i);
         }
 
         return result;

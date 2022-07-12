@@ -1,9 +1,9 @@
 package io.leetcode.algorithm.pointer;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class TwoSum2Test {
 
@@ -17,12 +17,12 @@ public class TwoSum2Test {
     @Test
     void twoSum_shouldReturnIndexesOfValuesThatSumsToTheTargetIncrementedByOne() {
         // Given
-        int[] numbers = new int[] { 2, 7, 11, 15 };
+        int[] numbers = new int[]{2, 7, 11, 15};
         int target = 9;
 
         // When
         int[] actual = underTest.twoSum(numbers, target);
-        int[] expected = new int[] { 1, 2 };
+        int[] expected = new int[]{1, 2};
 
         // Then
         assertArrayEquals(expected, actual);

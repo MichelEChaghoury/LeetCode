@@ -29,10 +29,7 @@ public class EncodeAndDecodeStrings {
         StringBuilder builder = new StringBuilder();
 
         for (String str : strs) {
-            builder
-                    .append(str.length())
-                    .append("#")
-                    .append(str);
+            builder.append(str.length()).append("#").append(str);
         }
 
         return builder.toString();

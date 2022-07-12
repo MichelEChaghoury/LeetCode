@@ -1,9 +1,9 @@
 package io.leetcode.algorithm.pointer;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ContainerWithMostWaterTest {
 
@@ -15,9 +15,9 @@ public class ContainerWithMostWaterTest {
     }
 
     @Test
-    void maxArea_shouldReturnTheMaxiumAreaFound() {
+    void maxArea_shouldReturnTheMaximumAreaFound() {
         // Given
-        int[] height = new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+        int[] height = new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7};
 
         // When
         int actual = underTest.maxArea(height);
